@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
-</head>
-<body>
-    
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- tailwind + daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a33ba08633.js" crossorigin="anonymous"></script>
+
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryColor: '#F85559'
+                    }
+                }
+            }
+        }
+    </script>
+
+<body class="font-['Lato']">
+    <header class="w-full flex flex-col items-center">
+        <nav class="w-3/4 bg-primaryColor rounded-full grid grid-cols-3 py-5 px-8">
+            <!-- link container -->
+            <div class="items-center flex gap-4 text-white text-lg font-medium">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Shop</a>
+                <a href="">All Fruits</a>
+            </div>
+
+            <!-- logo container -->
+            <div class="flex justify-center items-center gap-4">
+                <img class="h-11" src="images/logo.png" alt="Logo">
+                <p class="text-white text-[2.5rem] font-bold">Fruit Burst</p>
+            </div>
+            
+            <!-- search box -->
+            <div class="flex justify-end items-center pr-6">
+                <input type="text" placeholder="Search" class="input input-bordered rounded-full w-3/5 max-w-xs" />
+                <i class="fa-solid fa-magnifying-glass -ml-10"></i>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
