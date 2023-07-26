@@ -34,8 +34,11 @@
         }
     </script>
 
-<body class="font-['Lato']">
-    <header class="w-full mb-64 flex flex-col items-center gap-4 lg:gap-6">
+    <!-- custom css -->
+  </head>
+
+<body class="font-['Lato'] w-[98.8vw]">
+    <header class="w-[98.8vw] mb-64 flex flex-col items-center gap-4 lg:gap-6">
         <nav class="w-[90vw] lg:w-3/4 lg:bg-primaryColor rounded-full grid grid-cols-2 lg:grid-cols-3 lg:py-5 lg:px-8 mt-4 lg:mt-6">
             <!-- link container -->
             <div class="items-center hidden lg:flex gap-4 text-white text-lg font-medium">
@@ -195,10 +198,10 @@
         </div>
     </header>
 
-    <main class="flex flex-col items-center">
+    <main class="w-[98.8vw] flex flex-col items-center">
       <!-- deal of the day -->
       <!-- top text and countdown container -->
-      <div class="w-3/4 flex justify-between items-center mb-4">
+      <div class="w-3/4 flex-col flex-col-reverse flex lg:flex-row justify-between items-center mb-4">
         <!-- text container -->
         <div class="w-[42%] mx-1">
           <h3 class="text-primaryText text-4xl xl:text-5xl font-extrabold">
@@ -271,14 +274,18 @@
               <input type="radio" name="rating-10" class="bg-primaryColor mask mask-star-2 mask-half-2" />
             </div>
             <!-- modal -->
-            <button class="text-primaryColor" onclick="my_modal_3.showModal()">Details</button>
-            <dialog id="my_modal_1" class="modal">
-              <form method="dialog" class="modal-box">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click on ✕ button to close</p>
-              </form>
-            </dialog>
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+<dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
           </div>
         </div>
         <!-- card2 -->
@@ -305,14 +312,18 @@
               <input type="radio" name="rating-10" class="bg-primaryColor mask mask-star-2 mask-half-2" />
             </div>
             <!-- modal -->
-            <button class="text-primaryColor" onclick="my_modal_3.showModal()">Details</button>
-            <dialog id="my_modal_2" class="modal">
-              <form method="dialog" class="modal-box">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click on ✕ button to close</p>
-              </form>
-            </dialog>
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">open modal</button>
+<dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
           </div>
         </div>
         <!-- card3 -->
@@ -339,14 +350,18 @@
               <input type="radio" name="rating-10" class="bg-primaryColor mask mask-star-2 mask-half-2" />
             </div>
             <!-- modal -->
-            <button class="text-primaryColor" onclick="my_modal_3.showModal()">Details</button>
-            <dialog id="my_modal_3" class="modal">
-              <form method="dialog" class="modal-box">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click on ✕ button to close</p>
-              </form>
-            </dialog>
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+<dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
           </div>
         </div>
         <!-- card4 -->
@@ -373,24 +388,111 @@
               <input type="radio" name="rating-10" class="bg-primaryColor mask mask-star-2 mask-half-2" />
             </div>
             <!-- modal -->
-            <!-- You can open the modal using ID.showModal() method -->
-            <button class="text-primaryColor" onclick="my_modal_3.showModal()">Details</button>
-            <dialog id="my_modal_4" class="modal">
-              <form method="dialog" class="modal-box">
-                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click on ✕ button to close</p>
-              </form>
-            </dialog>
+            <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_4.showModal()">open modal</button>
+<dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box">
+    <h3 class="font-bold text-lg">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <!-- if there is a button in form, it will close the modal -->
+      <button class="btn">Close</button>
+    </div>
+  </form>
+</dialog>
           </div>
         </div>
         
       </div>
       <button class="px-5 py-3 rounded-lg bg-primaryColor text-white my-4">Shop All</button>
+
+      <!-- meet the team section -->
+      <div class="relative w-3/4">
+        <!-- image container -->
+        <div>
+          <img class="brightness-50" src="images/team.png" alt="">
+        </div>
+        <div class="absolute top-0 flex flex-col items-center text-white">
+          <!-- text container -->
+          <div class="w-1/2">
+            <h3>Meet the team section</h3>
+            <p>
+              Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            </p>
+          </div>
+          <!-- card container -->
+          <div class="flex justify-center gap-8">
+            <!-- card1 -->
+            <div class="flex flex-col items-center">
+              <img src="images/member1.png" alt="">
+              <h3>
+                Awlad Hossain
+              </h3>
+              <p>
+                Fruits Expert
+              </p>
+              <!-- icon container -->
+              <div>
+                <i class="fa-brands fa-facebook text-primaryColor"></i>
+                <i class="fa-brands fa-twitter text-primaryColor"></i>
+                <i class="fa-brands fa-linkedin-in text-primaryColor"></i>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="flex flex-col items-center">
+              <img src="images/member1.png" alt="">
+              <h3>
+                Awlad Hossain
+              </h3>
+              <p>
+                Fruits Expert
+              </p>
+              <!-- icon container -->
+              <div>
+                <i class="fa-brands fa-facebook text-primaryColor"></i>
+                <i class="fa-brands fa-twitter text-primaryColor"></i>
+                <i class="fa-brands fa-linkedin-in text-primaryColor"></i>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div class="flex flex-col items-center">
+              <img src="images/member1.png" alt="">
+              <h3>
+                Awlad Hossain
+              </h3>
+              <p>
+                Fruits Expert
+              </p>
+              <!-- icon container -->
+              <div>
+                <i class="fa-brands fa-facebook text-primaryColor"></i>
+                <i class="fa-brands fa-twitter text-primaryColor"></i>
+                <i class="fa-brands fa-linkedin-in text-primaryColor"></i>
+              </div>
+            </div>
+            <!-- card4 -->
+            <div class="flex flex-col items-center">
+              <img src="images/member1.png" alt="">
+              <h3>
+                Awlad Hossain
+              </h3>
+              <p>
+                Fruits Expert
+              </p>
+              <!-- icon container -->
+              <div>
+                <i class="fa-brands fa-facebook text-primaryColor"></i>
+                <i class="fa-brands fa-twitter text-primaryColor"></i>
+                <i class="fa-brands fa-linkedin-in text-primaryColor"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- footer -->
-    <footer class="w-full bg-[#121212] flex flex-col justify-center items-center gap-8 py-10">
+    <footer class="w-[98.8vw] bg-[#121212] flex flex-col justify-center items-center gap-8 py-10">
       <!-- logo container -->
       <div class="flex justify-start lg:justify-center items-center gap-4">
         <img class="h-6 lg:h-8" src="images/logo.png" alt="Logo">
